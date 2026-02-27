@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>La Cigale | Un monument vivant au cœur de Nantes</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;family=Montserrat:wght@300;400;500;600&amp;family=Material+Icons&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#B4975A", // Elegant Gold
+              secondary: "#1A365D", // Deep Heritage Blue
+              "background-light": "#FFFFFF",
+              "background-dark": "#0F172A",
+            },
+            fontFamily: {
+              display: ["Cormorant Garamond", "serif"],
+              body: ["Montserrat", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              'lg': '0.5rem',
+            },
+          },
+        },
+      };
+    </script>
+<style>
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .border-gold {
+            border-image: linear-gradient(to right, #B4975A, #D4AF37) 1;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #B4975A;
+        }
+    </style>
+</head>
+<body class="font-body bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 transition-colors duration-300">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-gold transition-all duration-300">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center space-x-8">
+<a class="text-2xl font-display font-bold tracking-widest text-secondary dark:text-primary" href="#">LA CIGALE</a>
+<div class="hidden lg:flex space-x-6 text-xs uppercase tracking-widest font-semibold">
+<a class="hover:text-primary transition" href="#experience">L'Expérience</a>
+<a class="hover:text-primary transition" href="#menus">Menus</a>
+<a class="hover:text-primary transition" href="#salons">Privatisations</a>
+<a class="hover:text-primary transition" href="#boutique">La Boutique</a>
+</div>
+</div>
+<div class="flex items-center space-x-6">
+<button class="flex items-center space-x-1 text-xs uppercase tracking-widest font-semibold text-secondary dark:text-slate-300">
+<span class="material-icons text-sm">language</span>
+<span>FR</span>
+</button>
+<a class="bg-primary hover:bg-opacity-90 text-white px-6 py-3 text-xs uppercase tracking-widest font-bold transition shadow-lg" href="#reservation">
+                    Réserver
+                </a>
+</div>
+</div>
+</nav>
+<div class="fixed right-0 top-1/2 -translate-y-1/2 z-40 hidden xl:block">
+<a class="bg-secondary text-white py-6 px-2 [writing-mode:vertical-lr] rotate-180 uppercase tracking-widest text-xs font-bold hover:bg-primary transition-all duration-300 flex items-center gap-2" href="#reservation">
+<span class="material-icons rotate-90">event</span>
+            Réservations
+        </a>
+</div>
+<header class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Intérieur majestueux Art Nouveau" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDehs7gCAiWE-YcT7jEFv-_W2CilfxkRAVeDHtAe2TaVFgF6ZdNLaTXM8JlWr8ZnTlk9VMBwfbI37PFmRPoUKCOfEb8Fk5uV3W6ATMzyz-uSQfICTYLeX28g9EZjh976auZGpjh8vQ4tgbgeD_pw7BcmqW2t_DoqAK6q0-_35zyEpzo638FpY1zRABSprfxz2a53AgU6wAKyhGodb6IcxRfAj1Qt0xWD5EP-t2MJphvdFnKhqMF0FtB2FtiBg1VRur-w9wXxiZ-OIU"/>
+<div class="absolute inset-0 bg-black/40"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-4xl">
+<h1 class="font-display text-5xl md:text-7xl text-white mb-6 leading-tight text-shadow">La Cigale : Un monument vivant au cœur de Nantes</h1>
+<p class="text-white text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto italic">Depuis 1895, le plus beau décor de Brasserie au monde vous accueille face à l'Opéra Graslin.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 uppercase tracking-widest text-sm font-bold transition" href="#menus">Découvrir la Carte</a>
+<a class="bg-primary text-white hover:bg-opacity-90 px-8 py-4 uppercase tracking-widest text-sm font-bold transition" href="#experience">Visite Virtuelle</a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-icons text-white text-3xl">expand_more</span>
+</div>
+</header>
+<section class="py-24 px-6 overflow-hidden" id="experience">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<span class="text-primary uppercase tracking-[0.3em] text-sm font-bold block mb-4">Patrimoine &amp; Gastronomie</span>
+<h2 class="font-display text-4xl md:text-5xl text-secondary dark:text-slate-200">L'Art de Vivre Nantais</h2>
+</div>
+<div class="space-y-32">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1">
+<span class="text-primary font-display text-2xl italic mb-2 block">Brasserie de Spectacle</span>
+<h3 class="text-3xl font-display mb-6 text-secondary dark:text-slate-200">Face à l'Opéra Graslin</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                            Située sur la place Graslin, La Cigale est indissociable de la vie culturelle nantaise. Avant ou après le spectacle, nos tables s'animent dans une atmosphère unique où se croisent artistes et gourmets.
+                        </p>
+<a class="text-primary font-bold border-b border-primary pb-1 hover:text-secondary transition uppercase text-xs tracking-widest" href="#">En savoir plus</a>
+</div>
+<div class="order-1 md:order-2 relative group">
+<div class="absolute -inset-4 border border-gold opacity-30 group-hover:opacity-100 transition duration-500"></div>
+<img alt="Brasserie ambiance spectacle" class="w-full h-[500px] object-cover relative z-10 shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEu37I71_qNlNS34ydbs1Mih2bAQ9KvccYHirYn_YNgcNjeAMI9cz9uQpukizITqB36xvZu0Rd2l2-fJLAfEu5robYGo5SWFWdR3wSWOXVPWvrrK33C8fb8d0Hcnn_MVVITpmZnoSMhHcNO7rZMekIagFEsdxhSSgZ5LRu1A1ijtR6FE_pwFB-UhEYCrWw-ebO806iE-mqqT7-5MrGhwAdnY0nTcS-MD9JqiFmEaizXq-FCdpaDoTTVqn5mnFFKjz0ualuViSocc0"/>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="relative group">
+<div class="absolute -inset-4 border border-gold opacity-30 group-hover:opacity-100 transition duration-500"></div>
+<img alt="Détails Art Nouveau" class="w-full h-[500px] object-cover relative z-10 shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6_nBgB3sHOpu7JxJtrC3vZubToDvKlLv11VguuJonWTYssP8Z92bPHMifNtC1S0aHr_ZVuzxi8zAhPdd-d61D8A6h_E69grdYRNCFTChUFKgtwThLcXe89R6KE5lTmjHBMrS7HfGdsalit_zYYpM_-eJM-Xj4DYE071T6fVDr83yQh21RjNZXXIs5yIEUB-y2YeTKjhgMrC30_golpIzXjnhXcMW1zEjHvbhF6VYQd0SpTiAgZ3jAJPliw-_zJ9gfIO9yaETXMWM"/>
+</div>
+<div>
+<span class="text-primary font-display text-2xl italic mb-2 block">Le Génie du Décor</span>
+<h3 class="text-3xl font-display mb-6 text-secondary dark:text-slate-200">L'Apogée de l'Art Nouveau</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                            Classée Monument Historique, chaque céramique, chaque dorure et chaque fresque de La Cigale raconte une histoire. Émile Libaudière a conçu ici un chef-d’œuvre total où la lumière danse sur les mosaïques.
+                        </p>
+<a class="text-primary font-bold border-b border-primary pb-1 hover:text-secondary transition uppercase text-xs tracking-widest" href="#">Visite Historique</a>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1">
+<span class="text-primary font-display text-2xl italic mb-2 block">Cuisine de Saison</span>
+<h3 class="text-3xl font-display mb-6 text-secondary dark:text-slate-200">La Fraîcheur des Océans</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                            Réputée pour ses bancs d’écailler, La Cigale célèbre les produits de la mer et le terroir nantais. Huîtres de Bretagne, poissons de la criée et pâtisseries maison font notre renommée depuis plus d'un siècle.
+                        </p>
+<a class="text-primary font-bold border-b border-primary pb-1 hover:text-secondary transition uppercase text-xs tracking-widest" href="#">Nos Producteurs</a>
+</div>
+<div class="order-1 md:order-2 relative group">
+<div class="absolute -inset-4 border border-gold opacity-30 group-hover:opacity-100 transition duration-500"></div>
+<img alt="Plateau de fruits de mer" class="w-full h-[500px] object-cover relative z-10 shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgZJOKnZ__YR2Hq0TQlRYm6fHZy5uw2U72gly4leK0VOjt9_DIlpa27nV8cRJ8ji5_PnKtHN-TpuLmzDbBuSotTyES3XRMgdi7-q64VNoi5MiFrE26exZ2xZF1lu1YrusZwmd9eEqtst0TxUZ448n6NNFzodv85XrhkhC4S6kILgCzEjNRYkCYMACoTLCRkXE5GVMkiWAl-LIeOhAzi-_T3Pplx9MLuaSdo25rE0IBh46LDA76loia9qY5ZuNB--EdDh3r-Wb-mg8"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-secondary py-24 px-6 text-white overflow-hidden" id="menus">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16">
+<div>
+<span class="text-primary uppercase tracking-[0.3em] text-sm font-bold block mb-4">La Carte</span>
+<h2 class="font-display text-4xl md:text-5xl">Éveil des Papilles</h2>
+</div>
+<div class="mt-8 md:mt-0">
+<div class="flex space-x-8 text-sm uppercase tracking-widest border-b border-white/20 pb-2">
+<button class="hover:text-primary border-b-2 border-primary pb-2 font-bold transition">Incontournables</button>
+<button class="hover:text-primary pb-2 transition text-white/60">Écailler</button>
+<button class="hover:text-primary pb-2 transition text-white/60">Douceurs</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group cursor-pointer">
+<div class="overflow-hidden mb-6 aspect-[3/4]">
+<img alt="Spécialité viande" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDrjdUKOFYLXc5jNkzFn7aNaaKXyCpyPwDHy4Ld0g9x8gFNEaG3Khr4CacdHozuSDPM0LWE-m2v6iQQNCYTRANZnNMdnjr-ub34UNdalQfs-2K4YOMXLT0m4LAxBZ8R7DEmejIZZFj3vae_VMcp9ANT6OEaI14HNHxwmCdwtkGxu3dxV-kZIPF0jI9p7bxGtiRtnSbdNnTXp6dG3hUqEq7QvOlkdREeo0wjSBA5ZV2Njm_6vwn04sPKOyVpf_9gv95OBJOQr2_rCw"/>
+</div>
+<h4 class="font-display text-2xl mb-2 group-hover:text-primary transition">Souris d'Agneau Confite</h4>
+<p class="text-white/60 text-sm mb-4">Au thym et miel de Loire, purée de pommes de terre onctueuse au beurre salé.</p>
+<span class="text-primary font-bold">28.00 €</span>
+</div>
+<div class="group cursor-pointer">
+<div class="overflow-hidden mb-6 aspect-[3/4]">
+<img alt="Entrée fruits de mer" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCddlUY84vkXIhoQG9lIc67QjccomolhGrXRb9Nwqlvab7mlrikTclzVaVLaUAMtdKBacUqcgswjcfJFqCkbmI2_HtYbuDBjsR3oOkakW29O2dB22Q0GTMDKVY0bV5WtUu7PcnysXkm1MRE7Pi6gvnbB2MJ_guDX6nLmjZExJ5kSHol-G2aanxfuAUYYjtxkq9zyPohOEp27iA5CZ8dBPcs6lr7lz9vIOvxkwLLLR8AGhHJZVrnWPg-FdINQUzbnH228IWd4PCdkfU"/>
+</div>
+<h4 class="font-display text-2xl mb-2 group-hover:text-primary transition">Noix de Saint-Jacques</h4>
+<p class="text-white/60 text-sm mb-4">Poêlées, émulsion de corail, tombée d'épinards frais et risotto de petit épeautre.</p>
+<span class="text-primary font-bold">32.00 €</span>
+</div>
+<div class="group cursor-pointer">
+<div class="overflow-hidden mb-6 aspect-[3/4]">
+<img alt="Dessert signature" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaPMzMSwBpbinAhKqV16rtc9hexKApUTdf_e_1o-AL9CQzeZ900rJIRayg4jbAJMZfEoWCVX-5RtgT8bZKxAV6GDGpIDv_1uCGjVCYhqn9rKteqT9SZKW9kHIHwM_L8DZ_TLSbKgjJDpmRcldQkATqoBnH6B-wNtRItkQ6jJDWxcAMpqd5_t369ipDqFyh1QenTAYfdlha_KHVWdoJcFpirfaYcHBccRjJoYsM1cxmw-yrIzWbCFpvsVXJF89F5ObcIwly0YiK5wQ"/>
+</div>
+<h4 class="font-display text-2xl mb-2 group-hover:text-primary transition">Le Baba au Rhum</h4>
+<p class="text-white/60 text-sm mb-4">Traditionnel, crème légère à la vanille bourbon et sirop aux agrumes de saison.</p>
+<span class="text-primary font-bold">14.00 €</span>
+</div>
+</div>
+<div class="mt-20 text-center">
+<a class="inline-block bg-primary text-white px-10 py-4 uppercase tracking-[0.2em] text-xs font-bold hover:bg-opacity-90 transition shadow-xl" href="#">
+                    Consulter la Carte Complète (PDF)
+                </a>
+</div>
+</div>
+</section>
+<section class="relative py-32 overflow-hidden" id="salons">
+<div class="absolute inset-0">
+<img alt="Salons privés luxueux" class="w-full h-full object-cover grayscale-[30%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_JPGlBV3lqtG0el71jkS_NQULyIlXaWBKVZSMIHayU24kTFsDXLLjWTX3bI7_I3MwHYJ40FBg17gsjaqDzq6C1IJOhjn8aFLj6RTG09yBbMoyyiZ2Aou0QcuKR03DxmP1Io3k6lz02_489uU-BY527mh94ri9QEOVmmLx3e95_P1BG3yDKKPlukQ1k0xG7szQSlO5MkJmCMQZRkHSouv2zRN2sxwrtvIVCrkBRIWxk9_m5m4JrEKw5NYW3P1yDoRJT8m8PlnkKBg"/>
+<div class="absolute inset-0 bg-secondary/80"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+<h2 class="font-display text-4xl md:text-6xl text-white mb-8">Vos événements dans un cadre classé</h2>
+<p class="text-primary-light text-xl text-white/80 max-w-2xl mx-auto mb-12 font-light">
+                Séminaires, mariages, déjeuners d'affaires ou dîners de gala : nos salons historiques offrent un prestige incomparable à vos réceptions.
+            </p>
+<a class="inline-block bg-white text-secondary hover:bg-primary hover:text-white px-10 py-4 uppercase tracking-[0.2em] text-xs font-bold transition shadow-xl" href="#">
+                Demander un devis personnalisé
+            </a>
+</div>
+</section>
+<section class="py-24 px-6 bg-slate-50 dark:bg-slate-900/50" id="boutique">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="text-primary uppercase tracking-[0.3em] text-sm font-bold block mb-4">Coffrets &amp; Souvenirs</span>
+<h2 class="font-display text-4xl md:text-5xl text-secondary dark:text-white">La Boutique de la Cigale</h2>
+</div>
+<a class="hidden md:block text-sm uppercase tracking-widest font-bold text-primary hover:underline" href="#">Voir tout l'e-shop</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="bg-white dark:bg-slate-800 p-4 shadow-sm hover:shadow-xl transition duration-300">
+<div class="aspect-square bg-slate-100 mb-4 overflow-hidden">
+<img alt="Carte Cadeau" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsU5f-ELk5D2y7XY_SSW_RYIzKCG9L28qo4c4dE4za4m76DkdTAKNE3XsiOQNbjuDefpEQHU9fMtq6ZCIO4IbRqPZmjch7Rd-S9lfma_nzc7lQzHiwh87hdQiZH5AU-OABH_q_heeLCq4dlAow-Rqm64Rb_bmQoPAqKh1utGxmWDKIvin_IZp-FEJiPZvdjZwVAzln85NOq2G4BY24tAYO12NpDu-h4kxSXYuhA2iopqfJVEJxsOa5CdiHP1Lgb0N8DJQxhcfoVCY"/>
+</div>
+<h5 class="font-bold text-xs uppercase tracking-wider mb-1">Carte Cadeau Gastronomique</h5>
+<p class="text-primary font-semibold">À partir de 50€</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-4 shadow-sm hover:shadow-xl transition duration-300">
+<div class="aspect-square bg-slate-100 mb-4 overflow-hidden">
+<img alt="Statuette" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK9bcPKjBLG5XStUwO20Z9WHeG1Pxp4Qo4eZpxjASeRrRqZsq4KKgx5s6RP4lhJk_6A4EF13nnM4eS_sFt5AGpVd6pgQjMsCp2NTIs_3wriwsslgcCTElrlzvMIrlXG2iZ7Jxc5l091dQ6j8qfASnAo4aZeJyRUTlh447OnqwQokV9x_hzBdjA0kbYMFFhHK5KG3QKPwk21txOG1elqeRXKqTPPnbXStCbw6EjZ4KPu_PeMa-XfLghKMgmG5WnxxS4WnNv6oalE3E"/>
+</div>
+<h5 class="font-bold text-xs uppercase tracking-wider mb-1">Cigale en Faïence de Quimper</h5>
+<p class="text-primary font-semibold">45.00€</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-4 shadow-sm hover:shadow-xl transition duration-300">
+<div class="aspect-square bg-slate-100 mb-4 overflow-hidden">
+<img alt="Coffret Gourmand" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuFrrLHnOEhereqy4ROOVCUk4Xe0iU6ui825N8jdEzQkUTlRq7X-Bjm6JMJHLM-iloqWw06_YJEX72g1zVfqxPlA_HAg1O5sTpyUsKm9o9f_DmUjNQz3GGgPqL-fKiTUF_b5VTX4gwIvjN0mqQ3iU4-abqL8clR7f_QgaZaQfZkmPdvgjueFFvATSeEk1bObYID41r1ctTcauowHNiQx-tBfwfTrt-VHrvw4Y9IlNchOXU1ikTn0z2FhKu1CvUOiL_ngxf4diF4t0"/>
+</div>
+<h5 class="font-bold text-xs uppercase tracking-wider mb-1">Coffret Tea-Time Impérial</h5>
+<p class="text-primary font-semibold">32.00€</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-4 shadow-sm hover:shadow-xl transition duration-300">
+<div class="aspect-square bg-slate-100 mb-4 overflow-hidden">
+<img alt="Livre d'Art" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLO7XFigeUpJAmyXSwB8FIfNlaetv62hqDNmhDZm6Bqi-NnaLwGCjAwrqHod37v9WcF5SlV5tmDc_ya5Nbgs7eu9eZMEYHO83iWmYTu3-L_SsbyFnnDbXzZreOH5X9-X6nKtdDh8O4_liZjBTBkBMku4wll1H97yfWB1FEzL1CqTw1cD3b6RDKYDmh6BN75YAlfuNKtiPobgY2nRVQ_0VQnthBqs7zFYsvhhQr4JAKM2HJcyFbKnylJlTrY06ZziLwPzLSQ6lPAx0"/>
+</div>
+<h5 class="font-bold text-xs uppercase tracking-wider mb-1">Livre : "L'histoire de la Cigale"</h5>
+<p class="text-primary font-semibold">24.90€</p>
+</div>
+</div>
+</div>
+</section>
+<section class="grid lg:grid-cols-2">
+<div class="bg-secondary p-12 lg:p-24 text-white flex flex-col justify-center">
+<h2 class="font-display text-4xl mb-12">Informations Pratiques</h2>
+<div class="space-y-10">
+<div class="flex items-start space-x-6">
+<span class="material-icons text-primary">location_on</span>
+<div>
+<h6 class="font-bold uppercase tracking-widest text-xs mb-2">Adresse</h6>
+<p class="text-white/70">4 Place Graslin, 44000 Nantes<br/>Face au Théâtre Graslin</p>
+</div>
+</div>
+<div class="flex items-start space-x-6">
+<span class="material-icons text-primary">schedule</span>
+<div>
+<h6 class="font-bold uppercase tracking-widest text-xs mb-2">Horaires d'Ouverture</h6>
+<p class="text-white/70">7j/7 — de 07h30 à 00h30</p>
+<p class="text-white/50 text-sm mt-1">Service continu : Brasserie, Salon de Thé, Bar</p>
+</div>
+</div>
+<div class="flex items-start space-x-6">
+<span class="material-icons text-primary">phone</span>
+<div>
+<h6 class="font-bold uppercase tracking-widest text-xs mb-2">Réservations</h6>
+<p class="text-white/70">+33 (0)2 51 84 94 94</p>
+</div>
+</div>
+</div>
+<div class="mt-16 flex space-x-4">
+<a class="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-primary hover:border-primary transition group" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-primary hover:border-primary transition group" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+</div>
+</div>
+<div class="h-[400px] lg:h-auto grayscale contrast-125 brightness-90 relative overflow-hidden">
+<div class="absolute inset-0 bg-slate-300 flex items-center justify-center overflow-hidden">
+<img alt="Plan de Nantes" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARFrInU3aRf1MMT9CXHSVPp4Na8zGNgYM_Txz3Cb9li5fFYUgXUHhhKHVfgQpgkeVDgeC1tY134FoVP28liOEPF0JEN2uNWR2XD1Wlcn3UhL1afrV7sTiVhfHcr62RCCz2RO61OrfRSm7YX7093oKDG4UUX7NWLkYUsepMGNxfez7seT3px2N8qGOMBGvdlbuB8wU0YIkYCC2Zs6bjwX1D9Igd53L6hBTU58rnjQUfF47yw6UxS6pDSubsJiKFn5d3Hb-hWXGrJto"/>
+<div class="absolute z-10 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-2xl border-4 border-white animate-pulse">
+<span class="material-icons text-white">restaurant</span>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-white dark:bg-slate-950 py-16 px-6 border-t border-gold/20">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+<div class="text-center md:text-left">
+<p class="font-display text-2xl tracking-widest text-secondary dark:text-primary mb-2">LA CIGALE</p>
+<p class="text-slate-400 text-xs uppercase tracking-widest">© 1895 - 2024 La Cigale. Tous droits réservés.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 text-[10px] uppercase tracking-widest font-bold text-slate-500 dark:text-slate-400">
+<a class="hover:text-primary" href="#">Mentions Légales</a>
+<a class="hover:text-primary" href="#">CGV</a>
+<a class="hover:text-primary" href="#">Confidentialité</a>
+<a class="hover:text-primary" href="#">Presse</a>
+<a class="hover:text-primary" href="#">Recrutement</a>
+</div>
+<div class="flex items-center space-x-6 opacity-60 hover:opacity-100 transition duration-500">
+<img alt="Maître Restaurateur" class="h-8 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLIrEjAcvFbHCogBUMcDEszGGOeTW3d50yBiTcwMbxC-9uJQfMJilU6lPdM78wYeCL72Rrd9AKb1XXt-_X650lp2E6bJ0Rcx1IFHBsOcdFWcejkyZgZ8tAyQ5d5m88_Nze0WbzLZIPyWeWGlGZXPiux2D8NV6bokMCKsFwhu6dHDQ3MW0PSna-bO91L7x0y60RN9dnTukL0ihgZqfIw1eBzIxY4D07rUCW2ZvaDYD7xj0AQcDjWVJ7GcUjwu5RW1KKrlUb_s9lgRA"/>
+<img alt="Guide Michelin" class="h-8 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi2hMQ_XfDHSCVh4BA5DK3ereBV6LEZYLE8ct4cidTxLMLbSZB92pgOZml1yh4t7eZO2rDw-kg_tivlbO5bxBKsZcRLTNs116YKAvKJVN9OEuBriLGWVuJDk2pZBYy_bO7nIhFyoXX3GZvBvXQr6yd9aAjoa2UbNdpfbeMedZt85XCFy9Jfnukr0Xa9Ufm1JWcOKTeyU_tpwSJ5gSC56Ua_svtLwJ6MWZrmfuRo1XR7nnEr0hr3KdvNmZcmLHQPc_6ubGinZG2gAE"/>
+</div>
+</div>
+<div class="mt-12 text-center">
+<p class="text-[10px] text-slate-300 uppercase tracking-widest">Conception &amp; Design — L'Atelier Numérique</p>
+</div>
+</footer>
+<script>
+        // Simple dark mode toggle check (could be wired to a button if needed)
+        // For now it respects system or starts in light
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            // document.documentElement.classList.add('dark');
+        }
+    </script>
+
+</body></html>
