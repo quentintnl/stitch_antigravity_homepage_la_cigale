@@ -38,6 +38,3 @@ Pour lancer l'application en mode développement :
 ## 🛡 Qualité & QA
 
 Un fichier `agents_correcteur.md` est présent à la racine pour guider les audits QA et assurer un alignement **Pixel-Perfect** avec les maquettes de référence.
-
----
-*Projet réalisé dans le cadre du module M1 No-Code / Tech — Nantes.*
